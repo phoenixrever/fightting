@@ -1,0 +1,2587 @@
+-- Logs begin at Sat 2018-05-05 01:27:19 UTC, end at Sat 2018-05-05 01:32:31 UTC. --
+May 05 01:27:20 homestead kernel: ACPI: IRQ0 used by override.
+May 05 01:27:20 homestead kernel: ACPI: IRQ9 used by override.
+May 05 01:27:20 homestead kernel: Using ACPI (MADT) for SMP configuration information
+May 05 01:27:20 homestead kernel: smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+May 05 01:27:20 homestead kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+May 05 01:27:20 homestead kernel: PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+May 05 01:27:20 homestead kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+May 05 01:27:20 homestead kernel: PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+May 05 01:27:20 homestead kernel: e820: [mem 0x80000000-0xfebfffff] available for PCI devices
+May 05 01:27:20 homestead kernel: Booting paravirtualized kernel on KVM
+May 05 01:27:20 homestead kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+May 05 01:27:20 homestead kernel: setup_percpu: NR_CPUS:512 nr_cpumask_bits:512 nr_cpu_ids:1 nr_node_ids:1
+May 05 01:27:20 homestead kernel: PERCPU: Embedded 34 pages/cpu @ffff88007fc00000 s99544 r8192 d31528 u2097152
+May 05 01:27:20 homestead kernel: pcpu-alloc: s99544 r8192 d31528 u2097152 alloc=1*2097152
+May 05 01:27:20 homestead kernel: pcpu-alloc: [0] 0 
+May 05 01:27:20 homestead kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+May 05 01:27:20 homestead kernel: Built 1 zonelists in Node order, mobility grouping on.  Total pages: 515961
+May 05 01:27:20 homestead kernel: Policy zone: DMA32
+May 05 01:27:20 homestead kernel: [0;1;39mKernel command line: BOOT_IMAGE=/vmlinuz-4.4.0-116-generic root=/dev/mapper/vagrant--vg-root ro net.ifnames=0 biosdevname=0 quiet[0m
+May 05 01:27:20 homestead kernel: PID hash table entries: 4096 (order: 3, 32768 bytes)
+May 05 01:27:20 homestead kernel: Calgary: detecting Calgary via BIOS EBDA area
+May 05 01:27:20 homestead kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+May 05 01:27:20 homestead kernel: Memory: 2007604K/2096696K available (8530K kernel code, 1309K rwdata, 3992K rodata, 1508K init, 1316K bss, 89092K reserved, 0K cma-reserved)
+May 05 01:27:20 homestead kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+May 05 01:27:20 homestead kernel: Kernel/User page tables isolation: enabled
+May 05 01:27:20 homestead kernel: Hierarchical RCU implementation.
+May 05 01:27:20 homestead kernel:         Build-time adjustment of leaf fanout to 64.
+May 05 01:27:20 homestead kernel:         RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=1.
+May 05 01:27:20 homestead kernel: RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=1
+May 05 01:27:20 homestead kernel: NR_IRQS:33024 nr_irqs:256 16
+May 05 01:27:20 homestead kernel: Console: colour VGA+ 80x25
+May 05 01:27:20 homestead kernel: console [tty0] enabled
+May 05 01:27:20 homestead kernel: tsc: Detected 3591.692 MHz processor
+May 05 01:27:20 homestead kernel: Calibrating delay loop (skipped) preset value.. 7183.38 BogoMIPS (lpj=14366768)
+May 05 01:27:20 homestead kernel: pid_max: default: 32768 minimum: 301
+May 05 01:27:20 homestead kernel: ACPI: Core revision 20150930
+May 05 01:27:20 homestead kernel: [0;1;39mACPI: 2 ACPI AML tables successfully acquired and loaded[0m
+May 05 01:27:20 homestead kernel: Security Framework initialized
+May 05 01:27:20 homestead kernel: Yama: becoming mindful.
+May 05 01:27:20 homestead kernel: AppArmor: AppArmor initialized
+May 05 01:27:20 homestead kernel: Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+May 05 01:27:20 homestead kernel: Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+May 05 01:27:20 homestead kernel: Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+May 05 01:27:20 homestead kernel: Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys io
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys memory
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys devices
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys freezer
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys net_cls
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys perf_event
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys net_prio
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys hugetlb
+May 05 01:27:20 homestead kernel: Initializing cgroup subsys pids
+May 05 01:27:20 homestead kernel: CPU: Physical Processor ID: 0
+May 05 01:27:20 homestead kernel: FEATURE SPEC_CTRL Not Present
+May 05 01:27:20 homestead kernel: mce: CPU supports 0 MCE banks
+May 05 01:27:20 homestead kernel: process: using mwait in idle threads
+May 05 01:27:20 homestead kernel: Last level iTLB entries: 4KB 1024, 2MB 1024, 4MB 1024
+May 05 01:27:20 homestead kernel: Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 1024, 1GB 4
+May 05 01:27:20 homestead kernel: Spectre V2 mitigation: Mitigation: Full generic retpoline
+May 05 01:27:20 homestead kernel: Spectre V2 mitigation: Speculation control IBPB not-supported IBRS not-supported
+May 05 01:27:20 homestead kernel: Freeing SMP alternatives memory: 32K
+May 05 01:27:20 homestead kernel: ftrace: allocating 32186 entries in 126 pages
+May 05 01:27:20 homestead kernel: smpboot: APIC(0) Converting physical 0 to logical package 0
+May 05 01:27:20 homestead kernel: smpboot: Max logical packages: 1
+May 05 01:27:20 homestead kernel: x2apic enabled
+May 05 01:27:20 homestead kernel: Switched APIC routing to physical x2apic.
+May 05 01:27:20 homestead kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+May 05 01:27:20 homestead kernel: smpboot: CPU0: Intel(R) Core(TM) i3-4160 CPU @ 3.60GHz (family: 0x6, model: 0x3c, stepping: 0x3)
+May 05 01:27:20 homestead kernel: Performance Events: unsupported p6 CPU model 60 no PMU driver, software events only.
+May 05 01:27:20 homestead kernel: KVM setup paravirtual spinlock
+May 05 01:27:20 homestead kernel: x86: Booted up 1 node, 1 CPUs
+May 05 01:27:20 homestead kernel: smpboot: Total of 1 processors activated (7183.38 BogoMIPS)
+May 05 01:27:20 homestead kernel: devtmpfs: initialized
+May 05 01:27:20 homestead kernel: evm: security.selinux
+May 05 01:27:20 homestead kernel: evm: security.SMACK64
+May 05 01:27:20 homestead kernel: evm: security.SMACK64EXEC
+May 05 01:27:20 homestead kernel: evm: security.SMACK64TRANSMUTE
+May 05 01:27:20 homestead kernel: evm: security.SMACK64MMAP
+May 05 01:27:20 homestead kernel: evm: security.ima
+May 05 01:27:20 homestead kernel: evm: security.capability
+May 05 01:27:20 homestead kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+May 05 01:27:20 homestead kernel: futex hash table entries: 256 (order: 2, 16384 bytes)
+May 05 01:27:20 homestead kernel: pinctrl core: initialized pinctrl subsystem
+May 05 01:27:20 homestead kernel: RTC time:  1:27:08, date: 05/05/18
+May 05 01:27:20 homestead kernel: NET: Registered protocol family 16
+May 05 01:27:20 homestead kernel: cpuidle: using governor ladder
+May 05 01:27:20 homestead kernel: cpuidle: using governor menu
+May 05 01:27:20 homestead kernel: [0;1;39mPCCT header not found.[0m
+May 05 01:27:20 homestead kernel: ACPI: bus type PCI registered
+May 05 01:27:20 homestead kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+May 05 01:27:20 homestead kernel: PCI: Using configuration type 1 for base access
+May 05 01:27:20 homestead kernel: ACPI: Added _OSI(Module Device)
+May 05 01:27:20 homestead kernel: ACPI: Added _OSI(Processor Device)
+May 05 01:27:20 homestead kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+May 05 01:27:20 homestead kernel: ACPI: Added _OSI(Processor Aggregator Device)
+May 05 01:27:20 homestead kernel: [0;1;39mACPI: Executed 1 blocks of module-level executable AML code[0m
+May 05 01:27:20 homestead kernel: ACPI: Interpreter enabled
+May 05 01:27:20 homestead kernel: ACPI: (supports S0 S5)
+May 05 01:27:20 homestead kernel: ACPI: Using IOAPIC for interrupt routing
+May 05 01:27:20 homestead kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+May 05 01:27:20 homestead kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+May 05 01:27:20 homestead kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+May 05 01:27:20 homestead kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+May 05 01:27:20 homestead kernel: [0;1;39macpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.[0m
+May 05 01:27:20 homestead kernel: PCI host bridge to bus 0000:00
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: root bus resource [mem 0x80000000-0xfdffffff window]
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+May 05 01:27:20 homestead kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+May 05 01:27:20 homestead kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+May 05 01:27:20 homestead kernel: pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+May 05 01:27:20 homestead kernel: pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+May 05 01:27:20 homestead kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+May 05 01:27:20 homestead kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+May 05 01:27:20 homestead kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+May 05 01:27:20 homestead kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+May 05 01:27:20 homestead kernel: pci 0000:00:02.0: [80ee:beef] type 00 class 0x030000
+May 05 01:27:20 homestead kernel: pci 0000:00:02.0: reg 0x10: [mem 0xe0000000-0xe07fffff pref]
+May 05 01:27:20 homestead kernel: pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+May 05 01:27:20 homestead kernel: pci 0000:00:03.0: reg 0x10: [mem 0xf0000000-0xf001ffff]
+May 05 01:27:20 homestead kernel: pci 0000:00:03.0: reg 0x18: [io  0xd010-0xd017]
+May 05 01:27:20 homestead kernel: pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+May 05 01:27:20 homestead kernel: pci 0000:00:04.0: reg 0x10: [io  0xd020-0xd03f]
+May 05 01:27:20 homestead kernel: pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+May 05 01:27:20 homestead kernel: pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+May 05 01:27:20 homestead kernel: pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+May 05 01:27:20 homestead kernel: pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+May 05 01:27:20 homestead kernel: pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+May 05 01:27:20 homestead kernel: pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+May 05 01:27:20 homestead kernel: pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+May 05 01:27:20 homestead kernel: pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+May 05 01:27:20 homestead kernel: pci 0000:00:08.0: [8086:100e] type 00 class 0x020000
+May 05 01:27:20 homestead kernel: pci 0000:00:08.0: reg 0x10: [mem 0xf0820000-0xf083ffff]
+May 05 01:27:20 homestead kernel: pci 0000:00:08.0: reg 0x18: [io  0xd240-0xd247]
+May 05 01:27:20 homestead kernel: pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+May 05 01:27:20 homestead kernel: pci 0000:00:0d.0: reg 0x10: [io  0xd248-0xd24f]
+May 05 01:27:20 homestead kernel: pci 0000:00:0d.0: reg 0x14: [io  0xd250-0xd253]
+May 05 01:27:20 homestead kernel: pci 0000:00:0d.0: reg 0x18: [io  0xd258-0xd25f]
+May 05 01:27:20 homestead kernel: pci 0000:00:0d.0: reg 0x1c: [io  0xd260-0xd263]
+May 05 01:27:20 homestead kernel: pci 0000:00:0d.0: reg 0x20: [io  0xd270-0xd27f]
+May 05 01:27:20 homestead kernel: pci 0000:00:0d.0: reg 0x24: [mem 0xf0840000-0xf0841fff]
+May 05 01:27:20 homestead kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+May 05 01:27:20 homestead kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+May 05 01:27:20 homestead kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+May 05 01:27:20 homestead kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+May 05 01:27:20 homestead kernel: [0;1;39mACPI: Enabled 2 GPEs in block 00 to 07[0m
+May 05 01:27:20 homestead kernel: vgaarb: setting as boot device: PCI:0000:00:02.0
+May 05 01:27:20 homestead kernel: vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+May 05 01:27:20 homestead kernel: vgaarb: loaded
+May 05 01:27:20 homestead kernel: vgaarb: bridge control possible 0000:00:02.0
+May 05 01:27:20 homestead kernel: [0;1;39mSCSI subsystem initialized[0m
+May 05 01:27:20 homestead kernel: libata version 3.00 loaded.
+May 05 01:27:20 homestead kernel: ACPI: bus type USB registered
+May 05 01:27:20 homestead kernel: usbcore: registered new interface driver usbfs
+May 05 01:27:20 homestead kernel: usbcore: registered new interface driver hub
+May 05 01:27:20 homestead kernel: usbcore: registered new device driver usb
+May 05 01:27:20 homestead kernel: PCI: Using ACPI for IRQ routing
+May 05 01:27:20 homestead kernel: PCI: pci_cache_line_size set to 64 bytes
+May 05 01:27:20 homestead kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+May 05 01:27:20 homestead kernel: e820: reserve RAM buffer [mem 0x7fff0000-0x7fffffff]
+May 05 01:27:20 homestead kernel: NetLabel: Initializing
+May 05 01:27:20 homestead kernel: NetLabel:  domain hash size = 128
+May 05 01:27:20 homestead kernel: NetLabel:  protocols = UNLABELED CIPSOv4
+May 05 01:27:20 homestead kernel: NetLabel:  unlabeled traffic allowed by default
+May 05 01:27:20 homestead kernel: [0;1;39mamd_nb: Cannot enumerate AMD northbridges[0m
+May 05 01:27:20 homestead kernel: clocksource: Switched to clocksource kvm-clock
+May 05 01:27:20 homestead kernel: AppArmor: AppArmor Filesystem Enabled
+May 05 01:27:20 homestead kernel: pnp: PnP ACPI init
+May 05 01:27:20 homestead kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+May 05 01:27:20 homestead kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+May 05 01:27:20 homestead kernel: pnp: PnP ACPI: found 2 devices
+May 05 01:27:20 homestead kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+May 05 01:27:20 homestead kernel: pci_bus 0000:00: resource 7 [mem 0x80000000-0xfdffffff window]
+May 05 01:27:20 homestead kernel: NET: Registered protocol family 2
+May 05 01:27:20 homestead kernel: TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+May 05 01:27:20 homestead kernel: TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+May 05 01:27:20 homestead kernel: TCP: Hash tables configured (established 16384 bind 16384)
+May 05 01:27:20 homestead kernel: UDP hash table entries: 1024 (order: 3, 32768 bytes)
+May 05 01:27:20 homestead kernel: UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+May 05 01:27:20 homestead kernel: NET: Registered protocol family 1
+May 05 01:27:20 homestead kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+May 05 01:27:20 homestead kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+May 05 01:27:20 homestead kernel: pci 0000:00:02.0: Video device with shadowed ROM
+May 05 01:27:20 homestead kernel: PCI: CLS 0 bytes, default 64
+May 05 01:27:20 homestead kernel: Unpacking initramfs...
+May 05 01:27:20 homestead kernel: Freeing initrd memory: 37256K
+May 05 01:27:20 homestead kernel: RAPL PMU detected, API unit is 2^-32 Joules, 4 fixed counters 10737418240 ms ovfl timer
+May 05 01:27:20 homestead kernel: hw unit of domain pp0-core 2^-0 Joules
+May 05 01:27:20 homestead kernel: hw unit of domain package 2^-0 Joules
+May 05 01:27:20 homestead kernel: hw unit of domain dram 2^-0 Joules
+May 05 01:27:20 homestead kernel: hw unit of domain pp1-gpu 2^-0 Joules
+May 05 01:27:20 homestead kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+May 05 01:27:20 homestead kernel: Scanning for low memory corruption every 60 seconds
+May 05 01:27:20 homestead kernel: audit: initializing netlink subsys (disabled)
+May 05 01:27:20 homestead kernel: [0;1;39maudit: type=2000 audit(1525483636.298:1): initialized[0m
+May 05 01:27:20 homestead kernel: [0;1;39mInitialise system trusted keyring[0m
+May 05 01:27:20 homestead kernel: HugeTLB registered 2 MB page size, pre-allocated 0 pages
+May 05 01:27:20 homestead kernel: zbud: loaded
+May 05 01:27:20 homestead kernel: [0;1;39mVFS: Disk quotas dquot_6.6.0[0m
+May 05 01:27:20 homestead kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+May 05 01:27:20 homestead kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+May 05 01:27:20 homestead kernel: fuse init (API version 7.23)
+May 05 01:27:20 homestead kernel: [0;1;39mKey type big_key registered[0m
+May 05 01:27:20 homestead kernel: [0;1;39mAllocating IMA MOK and blacklist keyrings.[0m
+May 05 01:27:20 homestead kernel: [0;1;39mKey type asymmetric registered[0m
+May 05 01:27:20 homestead kernel: [0;1;39mAsymmetric key parser 'x509' registered[0m
+May 05 01:27:20 homestead kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+May 05 01:27:20 homestead kernel: io scheduler noop registered
+May 05 01:27:20 homestead kernel: io scheduler deadline registered (default)
+May 05 01:27:20 homestead kernel: io scheduler cfq registered
+May 05 01:27:20 homestead kernel: pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+May 05 01:27:20 homestead kernel: pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+May 05 01:27:20 homestead kernel: ACPI: AC Adapter [AC] (on-line)
+May 05 01:27:20 homestead kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+May 05 01:27:20 homestead kernel: ACPI: Power Button [PWRF]
+May 05 01:27:20 homestead kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+May 05 01:27:20 homestead kernel: ACPI: Sleep Button [SLPF]
+May 05 01:27:20 homestead kernel: GHES: HEST is not enabled!
+May 05 01:27:20 homestead kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+May 05 01:27:20 homestead kernel: Linux agpgart interface v0.103
+May 05 01:27:20 homestead kernel: loop: module loaded
+May 05 01:27:20 homestead kernel: ata_piix 0000:00:01.1: version 2.13
+May 05 01:27:20 homestead kernel: scsi host0: ata_piix
+May 05 01:27:20 homestead kernel: scsi host1: ata_piix
+May 05 01:27:20 homestead kernel: ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+May 05 01:27:20 homestead kernel: ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+May 05 01:27:20 homestead kernel: libphy: Fixed MDIO Bus: probed
+May 05 01:27:20 homestead kernel: tun: Universal TUN/TAP device driver, 1.6
+May 05 01:27:20 homestead kernel: tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+May 05 01:27:20 homestead kernel: PPP generic driver version 2.4.2
+May 05 01:27:20 homestead kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+May 05 01:27:20 homestead kernel: ehci-pci: EHCI PCI platform driver
+May 05 01:27:20 homestead kernel: ehci-platform: EHCI generic platform driver
+May 05 01:27:20 homestead kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+May 05 01:27:20 homestead kernel: ohci-pci: OHCI PCI platform driver
+May 05 01:27:20 homestead kernel: ohci-platform: OHCI generic platform driver
+May 05 01:27:20 homestead kernel: uhci_hcd: USB Universal Host Controller Interface driver
+May 05 01:27:20 homestead kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+May 05 01:27:20 homestead kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+May 05 01:27:20 homestead kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+May 05 01:27:20 homestead kernel: mousedev: PS/2 mouse device common for all mice
+May 05 01:27:20 homestead kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+May 05 01:27:20 homestead kernel: rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+May 05 01:27:20 homestead kernel: rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+May 05 01:27:20 homestead kernel: i2c /dev entries driver
+May 05 01:27:20 homestead kernel: device-mapper: uevent: version 1.0.3
+May 05 01:27:20 homestead kernel: device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+May 05 01:27:20 homestead kernel: ledtrig-cpu: registered to indicate activity on CPUs
+May 05 01:27:20 homestead kernel: NET: Registered protocol family 10
+May 05 01:27:20 homestead kernel: NET: Registered protocol family 17
+May 05 01:27:20 homestead kernel: [0;1;39mKey type dns_resolver registered[0m
+May 05 01:27:20 homestead kernel: microcode: CPU0 sig=0x306c3, pf=0x40, revision=0x0
+May 05 01:27:20 homestead kernel: microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+May 05 01:27:20 homestead kernel: registered taskstats version 1
+May 05 01:27:20 homestead kernel: [0;1;39mLoading compiled-in X.509 certificates[0m
+May 05 01:27:20 homestead kernel: [0;1;39mLoaded X.509 cert 'Build time autogenerated kernel key: aa84f01984fbd529c105810b59e379d349698248'[0m
+May 05 01:27:20 homestead kernel: zswap: loaded using pool lzo/zbud
+May 05 01:27:20 homestead kernel: [0;1;39mKey type trusted registered[0m
+May 05 01:27:20 homestead kernel: [0;1;39mKey type encrypted registered[0m
+May 05 01:27:20 homestead kernel: AppArmor: AppArmor sha1 policy hashing enabled
+May 05 01:27:20 homestead kernel: ima: No TPM chip found, activating TPM-bypass!
+May 05 01:27:20 homestead kernel: evm: HMAC attrs: 0x1
+May 05 01:27:20 homestead kernel:   Magic number: 2:397:457
+May 05 01:27:20 homestead kernel: rtc_cmos rtc_cmos: setting system clock to 2018-05-05 01:27:09 UTC (1525483629)
+May 05 01:27:20 homestead kernel: BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+May 05 01:27:20 homestead kernel: EDD information not available.
+May 05 01:27:20 homestead kernel: PM: Hibernation image not present or could not be loaded.
+May 05 01:27:20 homestead kernel: Freeing unused kernel memory: 1508K
+May 05 01:27:20 homestead kernel: Write protecting the kernel read-only data: 14336k
+May 05 01:27:20 homestead kernel: Freeing unused kernel memory: 1700K
+May 05 01:27:20 homestead kernel: Freeing unused kernel memory: 104K
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: udevadm: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: udevadm: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: systemd-udevd: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: systemd-udevd: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: systemd-udevd: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: systemd-udevd: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: systemd-udevd: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: systemd-udevd: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: systemd-udevd: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: systemd-udevd: uninitialized urandom read (16 bytes read, 1 bits of entropy available)[0m
+May 05 01:27:20 homestead kernel: ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+May 05 01:27:20 homestead kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input4
+May 05 01:27:20 homestead kernel: FUJITSU Extended Socket Network Device Driver - version 1.0 - Copyright (c) 2015 FUJITSU LIMITED
+May 05 01:27:20 homestead kernel: e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+May 05 01:27:20 homestead kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
+May 05 01:27:20 homestead kernel: AVX2 version of gcm_enc/dec engaged.
+May 05 01:27:20 homestead kernel: AES CTR mode by8 optimization enabled
+May 05 01:27:20 homestead kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+May 05 01:27:20 homestead kernel: e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:0c:26:92
+May 05 01:27:20 homestead kernel: e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+May 05 01:27:20 homestead kernel: ahci 0000:00:0d.0: version 3.0
+May 05 01:27:20 homestead kernel: ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+May 05 01:27:20 homestead kernel: ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+May 05 01:27:20 homestead kernel: ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+May 05 01:27:20 homestead kernel: scsi host2: ahci
+May 05 01:27:20 homestead kernel: ata3: SATA max UDMA/133 abar m8192@0xf0840000 port 0xf0840100 irq 21
+May 05 01:27:20 homestead kernel: ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+May 05 01:27:20 homestead kernel: ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+May 05 01:27:20 homestead kernel: ata3.00: 134217728 sectors, multi 128: LBA48 NCQ (depth 31/32)
+May 05 01:27:20 homestead kernel: ata3.00: configured for UDMA/133
+May 05 01:27:20 homestead kernel: [0;1;39mscsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5[0m
+May 05 01:27:20 homestead kernel: [0;1;39msd 2:0:0:0: [sda] 134217728 512-byte logical blocks: (68.7 GB/64.0 GiB)[0m
+May 05 01:27:20 homestead kernel: [0;1;39msd 2:0:0:0: [sda] Write Protect is off[0m
+May 05 01:27:20 homestead kernel: sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+May 05 01:27:20 homestead kernel: [0;1;39msd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA[0m
+May 05 01:27:20 homestead kernel: [0;1;39msd 2:0:0:0: Attached scsi generic sg0 type 0[0m
+May 05 01:27:20 homestead kernel: e1000 0000:00:08.0 eth1: (PCI:33MHz:32-bit) 08:00:27:1b:4d:18
+May 05 01:27:20 homestead kernel: e1000 0000:00:08.0 eth1: Intel(R) PRO/1000 Network Connection
+May 05 01:27:20 homestead kernel:  sda: sda1 sda2 < sda5 >
+May 05 01:27:20 homestead kernel: [0;1;39msd 2:0:0:0: [sda] Attached SCSI disk[0m
+May 05 01:27:20 homestead kernel: tsc: Refined TSC clocksource calibration: 3592.184 MHz
+May 05 01:27:20 homestead kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x33c77bd9c12, max_idle_ns: 440795312946 ns
+May 05 01:27:20 homestead kernel: floppy0: no floppy controllers found
+May 05 01:27:20 homestead kernel: work still pending
+May 05 01:27:20 homestead kernel: md: linear personality registered for level -1
+May 05 01:27:20 homestead kernel: md: multipath personality registered for level -4
+May 05 01:27:20 homestead kernel: md: raid0 personality registered for level 0
+May 05 01:27:20 homestead kernel: md: raid1 personality registered for level 1
+May 05 01:27:20 homestead kernel: raid6: sse2x1   gen()  7798 MB/s
+May 05 01:27:20 homestead kernel: raid6: sse2x1   xor()  5183 MB/s
+May 05 01:27:20 homestead kernel: raid6: sse2x2   gen() 11058 MB/s
+May 05 01:27:20 homestead kernel: raid6: sse2x2   xor()  9221 MB/s
+May 05 01:27:20 homestead kernel: raid6: sse2x4   gen() 15956 MB/s
+May 05 01:27:20 homestead kernel: raid6: sse2x4   xor() 11188 MB/s
+May 05 01:27:20 homestead kernel: raid6: avx2x1   gen() 21076 MB/s
+May 05 01:27:20 homestead kernel: raid6: avx2x2   gen() 25066 MB/s
+May 05 01:27:20 homestead kernel: raid6: avx2x4   gen() 27794 MB/s
+May 05 01:27:20 homestead kernel: raid6: using algorithm avx2x4 gen() 27794 MB/s
+May 05 01:27:20 homestead kernel: raid6: using avx2x2 recovery algorithm
+May 05 01:27:20 homestead kernel: xor: automatically using best checksumming function:
+May 05 01:27:20 homestead kernel:    avx       : 20989.000 MB/sec
+May 05 01:27:20 homestead kernel: async_tx: api initialized (async)
+May 05 01:27:20 homestead kernel: md: raid6 personality registered for level 6
+May 05 01:27:20 homestead kernel: md: raid5 personality registered for level 5
+May 05 01:27:20 homestead kernel: md: raid4 personality registered for level 4
+May 05 01:27:20 homestead kernel: md: raid10 personality registered for level 10
+May 05 01:27:20 homestead kernel: Btrfs loaded
+May 05 01:27:20 homestead kernel: EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+May 05 01:27:20 homestead kernel: [0;1;39mrandom: nonblocking pool is initialized[0m
+May 05 01:27:20 homestead systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+May 05 01:27:20 homestead systemd[1]: Detected virtualization oracle.
+May 05 01:27:20 homestead systemd[1]: Detected architecture x86-64.
+May 05 01:27:20 homestead systemd[1]: Set hostname to <homestead>.
+May 05 01:27:20 homestead systemd[1]: Reached target User and Group Name Lookups.
+May 05 01:27:20 homestead systemd[1]: Listening on LVM2 poll daemon socket.
+May 05 01:27:20 homestead systemd[1]: Listening on udev Control Socket.
+May 05 01:27:20 homestead systemd[1]: Listening on fsck to fsckd communication Socket.
+May 05 01:27:20 homestead systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+May 05 01:27:20 homestead systemd[1]: Listening on Journal Socket.
+May 05 01:27:20 homestead systemd[1]: Listening on LVM2 metadata daemon socket.
+May 05 01:27:20 homestead systemd[1]: Listening on Journal Socket (/dev/log).
+May 05 01:27:20 homestead systemd[1]: Listening on Syslog Socket.
+May 05 01:27:20 homestead systemd[1]: Reached target Encrypted Volumes.
+May 05 01:27:20 homestead systemd[1]: Listening on Device-mapper event daemon FIFOs.
+May 05 01:27:20 homestead systemd[1]: Listening on Journal Audit Socket.
+May 05 01:27:20 homestead systemd[1]: Listening on udev Kernel Socket.
+May 05 01:27:20 homestead systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+May 05 01:27:20 homestead systemd[1]: Reached target System Time Synchronized.
+May 05 01:27:20 homestead systemd[1]: Started Trigger resolvconf update for networkd DNS.
+May 05 01:27:20 homestead systemd[1]: Created slice System Slice.
+May 05 01:27:20 homestead systemd[1]: Created slice system-systemd\x2dfsck.slice.
+May 05 01:27:20 homestead systemd[1]: Mounting POSIX Message Queue File System...
+May 05 01:27:20 homestead systemd[1]: Starting Create list of required static device nodes for the current kernel...
+May 05 01:27:20 homestead systemd[1]: Mounting Huge Pages File System...
+May 05 01:27:20 homestead systemd[1]: Starting Load Kernel Modules...
+May 05 01:27:20 homestead systemd[1]: Starting Nameserver information manager...
+May 05 01:27:20 homestead systemd[1]: Starting Journal Service...
+May 05 01:27:20 homestead systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+May 05 01:27:20 homestead systemd[1]: Created slice system-postgresql.slice.
+May 05 01:27:20 homestead systemd[1]: Starting Set console keymap...
+May 05 01:27:20 homestead systemd[1]: Mounting RPC Pipe File System...
+May 05 01:27:20 homestead systemd[1]: Starting Uncomplicated firewall...
+May 05 01:27:20 homestead systemd[1]: Created slice User and Session Slice.
+May 05 01:27:20 homestead systemd[1]: Reached target Slices.
+May 05 01:27:20 homestead systemd[1]: Mounting Debug File System...
+May 05 01:27:20 homestead systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+May 05 01:27:20 homestead systemd[1]: Started Create list of required static device nodes for the current kernel.
+May 05 01:27:20 homestead systemd[1]: Starting Create Static Device Nodes in /dev...
+May 05 01:27:20 homestead systemd[1]: Started Uncomplicated firewall.
+May 05 01:27:20 homestead kernel: Loading iSCSI transport class v2.0-870.
+May 05 01:27:20 homestead kernel: [0;1;39miscsi: registered transport (tcp)[0m
+May 05 01:27:20 homestead systemd[1]: Mounted Debug File System.
+May 05 01:27:20 homestead systemd[1]: Mounted POSIX Message Queue File System.
+May 05 01:27:20 homestead systemd[1]: Mounted Huge Pages File System.
+May 05 01:27:20 homestead kernel: [0;1;39miscsi: registered transport (iser)[0m
+May 05 01:27:20 homestead systemd[1]: Started Load Kernel Modules.
+May 05 01:27:20 homestead systemd[1]: Starting Apply Kernel Variables...
+May 05 01:27:20 homestead systemd[1]: Mounting FUSE Control File System...
+May 05 01:27:20 homestead systemd[1]: Mounted FUSE Control File System.
+May 05 01:27:20 homestead systemd[1]: Started Nameserver information manager.
+May 05 01:27:20 homestead systemd[1]: Reached target Network (Pre).
+May 05 01:27:20 homestead systemd[1]: Started LVM2 metadata daemon.
+May 05 01:27:20 homestead systemd-journald[375]: Journal started
+-- Subject: The journal has been started
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- The system journal process has started up, opened the journal
+-- files for writing and is now ready to process requests.
+May 05 01:27:20 homestead systemd-modules-load[373]: Inserted module 'iscsi_tcp'
+May 05 01:27:19 homestead systemd-modules-load[373]: Inserted module 'ib_iser'
+May 05 01:27:20 homestead systemd[1]: Started Journal Service.
+May 05 01:27:20 homestead systemd[1]: Mounted RPC Pipe File System.
+-- Subject: Unit run-rpc_pipefs.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit run-rpc_pipefs.mount has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:20 homestead kernel: RPC: Registered named UNIX socket transport module.
+May 05 01:27:20 homestead kernel: RPC: Registered udp transport module.
+May 05 01:27:20 homestead kernel: RPC: Registered tcp transport module.
+May 05 01:27:20 homestead kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+May 05 01:27:20 homestead systemd[1]: Started Apply Kernel Variables.
+-- Subject: Unit systemd-sysctl.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-sysctl.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:20 homestead loadkeys[377]: Loading /etc/console-setup/cached.kmap.gz
+May 05 01:27:20 homestead systemd[1]: Started Set console keymap.
+-- Subject: Unit keyboard-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit keyboard-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:20 homestead systemd[1]: Started Create Static Device Nodes in /dev.
+-- Subject: Unit systemd-tmpfiles-setup-dev.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-setup-dev.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:20 homestead systemd[1]: Starting udev Kernel Device Manager...
+-- Subject: Unit systemd-udevd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udevd.service has begun starting up.
+May 05 01:27:20 homestead lvm[376]:   2 logical volume(s) in volume group "vagrant-vg" monitored
+May 05 01:27:20 homestead systemd-udevd[442]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+May 05 01:27:20 homestead systemd[1]: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+-- Subject: Unit lvm2-monitor.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lvm2-monitor.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:21 homestead systemd[1]: Started udev Kernel Device Manager.
+-- Subject: Unit systemd-udevd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udevd.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:21 homestead systemd[1]: Starting Remount Root and Kernel File Systems...
+-- Subject: Unit systemd-remount-fs.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-remount-fs.service has begun starting up.
+May 05 01:27:21 homestead kernel: EXT4-fs (dm-0): re-mounted. Opts: errors=remount-ro
+May 05 01:27:21 homestead systemd[1]: Started Remount Root and Kernel File Systems.
+-- Subject: Unit systemd-remount-fs.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-remount-fs.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:21 homestead systemd[1]: Reached target Local File Systems (Pre).
+-- Subject: Unit local-fs-pre.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit local-fs-pre.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:21 homestead systemd[1]: Starting Flush Journal to Persistent Storage...
+-- Subject: Unit systemd-journal-flush.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-journal-flush.service has begun starting up.
+May 05 01:27:21 homestead systemd[1]: Starting udev Coldplug all Devices...
+-- Subject: Unit systemd-udev-trigger.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udev-trigger.service has begun starting up.
+May 05 01:27:21 homestead systemd[1]: Starting Load/Save Random Seed...
+-- Subject: Unit systemd-random-seed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-random-seed.service has begun starting up.
+May 05 01:27:21 homestead systemd[1]: Started Flush Journal to Persistent Storage.
+-- Subject: Unit systemd-journal-flush.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-journal-flush.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:21 homestead systemd[1]: Started Load/Save Random Seed.
+-- Subject: Unit systemd-random-seed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-random-seed.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:21 homestead systemd[1]: Started udev Coldplug all Devices.
+-- Subject: Unit systemd-udev-trigger.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udev-trigger.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:21 homestead systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+-- Subject: Unit systemd-ask-password-console.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-ask-password-console.path has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:21 homestead kernel: piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+May 05 01:27:22 homestead kernel: [0;1;39mvgdrvHeartbeatInit: Setting up heartbeat to trigger every 2000 milliseconds[0m
+May 05 01:27:22 homestead kernel: input: Unspecified device as /devices/pci0000:00/0000:00:04.0/input/input6
+May 05 01:27:22 homestead kernel: [0;1;39mvboxguest: misc device minor 55, IRQ 20, I/O port d020, MMIO at 00000000f0400000 (size 0x400000)[0m
+May 05 01:27:22 homestead kernel: vboxguest: Successfully loaded version 5.0.18_Ubuntu (interface 0x00010004)
+May 05 01:27:22 homestead kernel: [drm] Initialized drm 1.1.0 20060810
+May 05 01:27:22 homestead kernel: snd_intel8x0 0000:00:05.0: disable (unknown or VT-d) VM optimization
+May 05 01:27:22 homestead kernel: [0;1;31mintel_rapl: no valid rapl domains found in package 0[0m
+May 05 01:27:22 homestead kernel: snd_intel8x0 0000:00:05.0: intel8x0_measure_ac97_clock: measured 55453 usecs (13312 samples)
+May 05 01:27:22 homestead kernel: snd_intel8x0 0000:00:05.0: measured clock 240059 rejected
+May 05 01:27:22 homestead systemd[1]: Found device 82540EM Gigabit Ethernet Controller (PRO/1000 MT Desktop Adapter).
+-- Subject: Unit sys-subsystem-net-devices-eth0.device has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-subsystem-net-devices-eth0.device has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:22 homestead systemd[1]: Found device 82540EM Gigabit Ethernet Controller (PRO/1000 MT Desktop Adapter).
+-- Subject: Unit sys-subsystem-net-devices-eth1.device has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-subsystem-net-devices-eth1.device has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:22 homestead systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+-- Subject: Unit systemd-rfkill.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-rfkill.socket has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead kernel: snd_intel8x0 0000:00:05.0: intel8x0_measure_ac97_clock: measured 53558 usecs (12288 samples)
+May 05 01:27:23 homestead kernel: snd_intel8x0 0000:00:05.0: measured clock 229433 rejected
+May 05 01:27:23 homestead systemd-udevd[499]: [0;1;39mProcess '/lib/udev/hdparm' failed with exit code 5.[0m
+May 05 01:27:23 homestead systemd[1]: Found device VBOX_HARDDISK 1.
+-- Subject: Unit dev-disk-by\x2duuid-875e5089\x2d96b7\x2d4141\x2d922b\x2d23bbbe55a63e.device has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-disk-by\x2duuid-875e5089\x2d96b7\x2d4141\x2d922b\x2d23bbbe55a63e.device has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Starting File System Check on /dev/disk/by-uuid/875e5089-96b7-4141-922b-23bbbe55a63e...
+-- Subject: Unit systemd-fsck@dev-disk-by\x2duuid-875e5089\x2d96b7\x2d4141\x2d922b\x2d23bbbe55a63e.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-fsck@dev-disk-by\x2duuid-875e5089\x2d96b7\x2d4141\x2d922b\x2d23bbbe55a63e.service has begun starting up.
+May 05 01:27:23 homestead systemd[1]: Started File System Check Daemon to report status.
+-- Subject: Unit systemd-fsckd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-fsckd.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Found device /dev/mapper/vagrant--vg-swap_1.
+-- Subject: Unit dev-mapper-vagrant\x2d\x2dvg\x2dswap_1.device has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-mapper-vagrant\x2d\x2dvg\x2dswap_1.device has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Activating swap /dev/mapper/vagrant--vg-swap_1...
+-- Subject: Unit dev-mapper-vagrant\x2d\x2dvg\x2dswap_1.swap has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-mapper-vagrant\x2d\x2dvg\x2dswap_1.swap has begun starting up.
+May 05 01:27:23 homestead kernel: ppdev: user-space parallel port driver
+May 05 01:27:23 homestead kernel: snd_intel8x0 0000:00:05.0: intel8x0_measure_ac97_clock: measured 54570 usecs (12288 samples)
+May 05 01:27:23 homestead kernel: snd_intel8x0 0000:00:05.0: measured clock 225178 rejected
+May 05 01:27:23 homestead kernel: snd_intel8x0 0000:00:05.0: clocking to 48000
+May 05 01:27:23 homestead kernel: [drm] VRAM 00800000
+May 05 01:27:23 homestead kernel: [TTM] Zone  kernel: Available graphics memory: 1024102 kiB
+May 05 01:27:23 homestead kernel: [TTM] Initializing pool allocator
+May 05 01:27:23 homestead kernel: [TTM] Initializing DMA pool allocator
+May 05 01:27:23 homestead kernel: fbcon: vboxdrmfb (fb0) is primary device
+May 05 01:27:23 homestead kernel: Adding 1048572k swap on /dev/mapper/vagrant--vg-swap_1.  Priority:-1 extents:1 across:1048572k FS
+May 05 01:27:23 homestead kernel: Console: switching to colour frame buffer device 100x37
+May 05 01:27:23 homestead kernel: vboxvideo 0000:00:02.0: fb0: vboxdrmfb frame buffer device
+May 05 01:27:23 homestead kernel: [drm] Initialized vboxvideo 1.0.0 20130823 for 0000:00:02.0 on minor 0
+May 05 01:27:23 homestead systemd[1]: Activated swap /dev/mapper/vagrant--vg-swap_1.
+-- Subject: Unit dev-mapper-vagrant\x2d\x2dvg\x2dswap_1.swap has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-mapper-vagrant\x2d\x2dvg\x2dswap_1.swap has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Reached target Swap.
+-- Subject: Unit swap.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit swap.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Reached target Sound Card.
+-- Subject: Unit sound.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sound.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd-fsck[684]: /dev/sda1: clean, 309/124928 files, 124037/498688 blocks
+May 05 01:27:23 homestead systemd[1]: Started File System Check on /dev/disk/by-uuid/875e5089-96b7-4141-922b-23bbbe55a63e.
+-- Subject: Unit systemd-fsck@dev-disk-by\x2duuid-875e5089\x2d96b7\x2d4141\x2d922b\x2d23bbbe55a63e.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-fsck@dev-disk-by\x2duuid-875e5089\x2d96b7\x2d4141\x2d922b\x2d23bbbe55a63e.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Mounting /boot...
+-- Subject: Unit boot.mount has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit boot.mount has begun starting up.
+May 05 01:27:23 homestead kernel: EXT4-fs (sda1): mounting ext2 file system using the ext4 subsystem
+May 05 01:27:23 homestead kernel: EXT4-fs (sda1): mounted filesystem without journal. Opts: (null)
+May 05 01:27:23 homestead systemd[1]: Mounted /boot.
+-- Subject: Unit boot.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit boot.mount has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Reached target Local File Systems.
+-- Subject: Unit local-fs.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit local-fs.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Starting Preprocess NFS configuration...
+-- Subject: Unit nfs-config.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nfs-config.service has begun starting up.
+May 05 01:27:23 homestead systemd[1]: Starting LSB: AppArmor initialization...
+-- Subject: Unit apparmor.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apparmor.service has begun starting up.
+May 05 01:27:23 homestead systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: Unit plymouth-read-write.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-read-write.service has begun starting up.
+May 05 01:27:23 homestead systemd[1]: Starting Create Volatile Files and Directories...
+-- Subject: Unit systemd-tmpfiles-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-setup.service has begun starting up.
+May 05 01:27:23 homestead systemd[1]: Starting Set console font and keymap...
+-- Subject: Unit console-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit console-setup.service has begun starting up.
+May 05 01:27:23 homestead systemd-tmpfiles[751]: [0;1;39m[/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.[0m
+May 05 01:27:23 homestead systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+-- Subject: Unit plymouth-read-write.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-read-write.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Started Preprocess NFS configuration.
+-- Subject: Unit nfs-config.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nfs-config.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Reached target NFS client services.
+-- Subject: Unit nfs-client.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nfs-client.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead apparmor[749]:  * Starting AppArmor profiles
+May 05 01:27:23 homestead systemd[1]: Started Create Volatile Files and Directories.
+-- Subject: Unit systemd-tmpfiles-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+-- Subject: Unit systemd-update-utmp.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp.service has begun starting up.
+May 05 01:27:23 homestead systemd[1]: Started Update UTMP about System Boot/Shutdown.
+-- Subject: Unit systemd-update-utmp.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Started Set console font and keymap.
+-- Subject: Unit console-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit console-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:23 homestead systemd[1]: Created slice system-getty.slice.
+-- Subject: Unit system-getty.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit system-getty.slice has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead audit[862]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default" pid=862 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[862]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-cgns" pid=862 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[862]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-mounting" pid=862 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[862]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-nesting" pid=862 comm="apparmor_parser"
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.132:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default" pid=862 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.132:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-cgns" pid=862 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.132:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-mounting" pid=862 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.132:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-nesting" pid=862 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead audit[863]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=863 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[863]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=863 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[863]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=863 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[863]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=863 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[864]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/lxc-start" pid=864 comm="apparmor_parser"
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.168:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=863 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.168:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=863 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.168:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=863 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.168:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=863 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.168:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/lxc-start" pid=864 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead audit[865]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lxd/lxd-bridge-proxy" pid=865 comm="apparmor_parser"
+May 05 01:27:24 homestead kernel: [0;1;39maudit: type=1400 audit(1525483644.176:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lxd/lxd-bridge-proxy" pid=865 comm="apparmor_parser"[0m
+May 05 01:27:24 homestead audit[866]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=866 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[866]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=866 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[866]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//snap_update_ns" pid=866 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[867]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=867 comm="apparmor_parser"
+May 05 01:27:24 homestead audit[868]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ntpd" pid=868 comm="apparmor_parser"
+May 05 01:27:24 homestead apparmor[749]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+May 05 01:27:24 homestead audit[870]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=870 comm="apparmor_parser"
+May 05 01:27:24 homestead apparmor[749]:    ...done.
+May 05 01:27:24 homestead systemd[1]: Started LSB: AppArmor initialization.
+-- Subject: Unit apparmor.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apparmor.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Reached target System Initialization.
+-- Subject: Unit sysinit.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sysinit.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Starting LXD - unix socket.
+-- Subject: Unit lxd.socket has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lxd.socket has begun starting up.
+May 05 01:27:24 homestead systemd[1]: Listening on ACPID Listen Socket.
+-- Subject: Unit acpid.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.socket has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Listening on D-Bus System Message Bus Socket.
+-- Subject: Unit dbus.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dbus.socket has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started Clean PHP session files every 30 mins.
+-- Subject: Unit phpsessionclean.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit phpsessionclean.timer has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Listening on RPCbind Server Activation Socket.
+-- Subject: Unit rpcbind.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rpcbind.socket has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started Timer to automatically refresh installed snaps.
+-- Subject: Unit snapd.refresh.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.refresh.timer has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily.timer has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started ACPI Events Check.
+-- Subject: Unit acpid.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.path has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Reached target Paths.
+-- Subject: Unit paths.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit paths.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: Unit apt-daily-upgrade.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily-upgrade.timer has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Starting Socket activation for snappy daemon.
+-- Subject: Unit snapd.socket has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.socket has begun starting up.
+May 05 01:27:24 homestead systemd[1]: Listening on UUID daemon activation socket.
+-- Subject: Unit uuidd.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit uuidd.socket has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started Daily Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.timer has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Reached target Timers.
+-- Subject: Unit timers.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit timers.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started ifup for eth0.
+-- Subject: Unit ifup@eth0.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ifup@eth0.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started ifup for eth1.
+-- Subject: Unit ifup@eth1.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ifup@eth1.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Starting Raise network interfaces...
+-- Subject: Unit networking.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit networking.service has begun starting up.
+May 05 01:27:24 homestead systemd[1]: Listening on LXD - unix socket.
+-- Subject: Unit lxd.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lxd.socket has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Listening on Socket activation for snappy daemon.
+-- Subject: Unit snapd.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.socket has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Reached target Sockets.
+-- Subject: Unit sockets.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sockets.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Reached target Basic System.
+-- Subject: Unit basic.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit basic.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead systemd[1]: Started D-Bus System Message Bus.
+-- Subject: Unit dbus.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dbus.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:24 homestead kernel: IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+May 05 01:27:24 homestead kernel: e1000: eth1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+May 05 01:27:24 homestead kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+May 05 01:27:25 homestead dhclient[906]: Internet Systems Consortium DHCP Client 4.3.3
+May 05 01:27:25 homestead sh[877]: Internet Systems Consortium DHCP Client 4.3.3
+May 05 01:27:25 homestead sh[877]: Copyright 2004-2015 Internet Systems Consortium.
+May 05 01:27:25 homestead sh[877]: All rights reserved.
+May 05 01:27:25 homestead sh[877]: For info, please visit https://www.isc.org/software/dhcp/
+May 05 01:27:25 homestead dhclient[906]: Copyright 2004-2015 Internet Systems Consortium.
+May 05 01:27:25 homestead dhclient[906]: All rights reserved.
+May 05 01:27:25 homestead dhclient[906]: For info, please visit https://www.isc.org/software/dhcp/
+May 05 01:27:25 homestead dhclient[906]: 
+May 05 01:27:25 homestead kernel: floppy0: no floppy controllers found
+May 05 01:27:25 homestead kernel: IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+May 05 01:27:25 homestead kernel: e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+May 05 01:27:25 homestead kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+May 05 01:27:25 homestead ntpdate[941]: [0;1;31mname server cannot be used: Temporary failure in name resolution (-3)[0m
+May 05 01:27:25 homestead dhclient[906]: Listening on LPF/eth0/08:00:27:0c:26:92
+May 05 01:27:25 homestead sh[877]: Listening on LPF/eth0/08:00:27:0c:26:92
+May 05 01:27:25 homestead dhclient[906]: Sending on   LPF/eth0/08:00:27:0c:26:92
+May 05 01:27:25 homestead sh[877]: Sending on   LPF/eth0/08:00:27:0c:26:92
+May 05 01:27:25 homestead dhclient[906]: Sending on   Socket/fallback
+May 05 01:27:25 homestead sh[877]: Sending on   Socket/fallback
+May 05 01:27:25 homestead dhclient[906]: DHCPREQUEST of 10.0.2.15 on eth0 to 255.255.255.255 port 67 (xid=0x5f954a4b)
+May 05 01:27:25 homestead sh[877]: DHCPREQUEST of 10.0.2.15 on eth0 to 255.255.255.255 port 67 (xid=0x5f954a4b)
+May 05 01:27:25 homestead dhclient[906]: DHCPACK of 10.0.2.15 from 10.0.2.2
+May 05 01:27:25 homestead sh[877]: DHCPACK of 10.0.2.15 from 10.0.2.2
+May 05 01:27:25 homestead root[961]: [0;1;31m/etc/dhcp/dhclient-enter-hooks.d/samba returned non-zero exit status 1[0m
+May 05 01:27:25 homestead dbus[897]: [0;1;39m[system] AppArmor D-Bus mediation is enabled[0m
+May 05 01:27:25 homestead systemd[1]: Started Deferred execution scheduler.
+-- Subject: Unit atd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit atd.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:25 homestead systemd[1]: Starting PostgreSQL Cluster 10-main...
+-- Subject: Unit postgresql@10-main.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit postgresql@10-main.service has begun starting up.
+May 05 01:27:25 homestead systemd[1]: Starting System Logging Service...
+-- Subject: Unit rsyslog.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rsyslog.service has begun starting up.
+May 05 01:27:25 homestead systemd[1]: Starting vboxadd.service...
+-- Subject: Unit vboxadd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit vboxadd.service has begun starting up.
+May 05 01:27:25 homestead systemd[1]: Started FUSE filesystem for LXC.
+-- Subject: Unit lxcfs.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lxcfs.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:25 homestead systemd[1]: Starting LSB: Record successful boot for GRUB...
+-- Subject: Unit grub-common.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit grub-common.service has begun starting up.
+May 05 01:27:25 homestead systemd[1]: Started Regular background program processing daemon.
+-- Subject: Unit cron.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cron.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:25 homestead systemd[1]: Starting Snappy daemon...
+-- Subject: Unit snapd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.service has begun starting up.
+May 05 01:27:25 homestead cron[1011]: (CRON) INFO (pidfile fd = 3)
+May 05 01:27:25 homestead systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:25 homestead acpid[1018]: starting up with netlink and the input layer
+May 05 01:27:25 homestead acpid[1018]: 1 rule loaded
+May 05 01:27:25 homestead acpid[1018]: waiting for events: event logging is off
+May 05 01:27:25 homestead lxcfs[979]: hierarchies:
+May 05 01:27:25 homestead lxcfs[979]:   0: fd:   5: blkio
+May 05 01:27:25 homestead lxcfs[979]:   1: fd:   6: cpuset
+May 05 01:27:25 homestead lxcfs[979]:   2: fd:   7: hugetlb
+May 05 01:27:25 homestead lxcfs[979]:   3: fd:   8: devices
+May 05 01:27:25 homestead lxcfs[979]:   4: fd:   9: memory
+May 05 01:27:25 homestead lxcfs[979]:   5: fd:  10: perf_event
+May 05 01:27:25 homestead lxcfs[979]:   6: fd:  11: freezer
+May 05 01:27:25 homestead lxcfs[979]:   7: fd:  12: pids
+May 05 01:27:25 homestead lxcfs[979]:   8: fd:  13: cpu,cpuacct
+May 05 01:27:25 homestead lxcfs[979]:   9: fd:  14: net_cls,net_prio
+May 05 01:27:25 homestead lxcfs[979]:  10: fd:  15: name=systemd
+May 05 01:27:25 homestead kernel: [0;1;39mcgroup: new mount options do not match the existing superblock, will be ignored[0m
+May 05 01:27:25 homestead systemd[1]: Starting Clean php session files...
+-- Subject: Unit phpsessionclean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit phpsessionclean.service has begun starting up.
+May 05 01:27:25 homestead systemd[1]: Starting LXD - container startup/shutdown...
+-- Subject: Unit lxd-containers.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lxd-containers.service has begun starting up.
+May 05 01:27:25 homestead systemd[1]: Starting Login Service...
+-- Subject: Unit systemd-logind.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-logind.service has begun starting up.
+May 05 01:27:25 homestead systemd[1]: Starting Accounts Service...
+-- Subject: Unit accounts-daemon.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit accounts-daemon.service has begun starting up.
+May 05 01:27:25 homestead systemd[1]: Starting LSB: MD monitoring daemon...
+-- Subject: Unit mdadm.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mdadm.service has begun starting up.
+May 05 01:27:26 homestead cron[1011]: (CRON) INFO (Running @reboot jobs)
+May 05 01:27:26 homestead ifup[1030]: /sbin/ifup: waiting for lock on /run/network/ifstate.eth0
+May 05 01:27:26 homestead mdadm[1028]:  * Starting MD monitoring service mdadm --monitor
+May 05 01:27:26 homestead systemd[1]: Started Login Service.
+-- Subject: Unit systemd-logind.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-logind.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:26 homestead systemd-logind[1026]: New seat seat0.
+-- Subject: A new seat seat0 is now available
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new seat seat0 has been configured and is now available.
+May 05 01:27:26 homestead systemd-logind[1026]: Watching system buttons on /dev/input/event0 (Power Button)
+May 05 01:27:26 homestead systemd-logind[1026]: Watching system buttons on /dev/input/event1 (Sleep Button)
+May 05 01:27:26 homestead systemd-logind[1026]: Watching system buttons on /dev/input/event3 (Video Bus)
+May 05 01:27:26 homestead systemd[1]: Started System Logging Service.
+-- Subject: Unit rsyslog.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rsyslog.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:26 homestead dhclient[906]: bound to 10.0.2.15 -- renewal in 38860 seconds.
+May 05 01:27:26 homestead sh[877]: bound to 10.0.2.15 -- renewal in 38860 seconds.
+May 05 01:27:26 homestead systemd[1]: Started LSB: Record successful boot for GRUB.
+-- Subject: Unit grub-common.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit grub-common.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:27 homestead mdadm[1028]:    ...done.
+May 05 01:27:27 homestead systemd[1]: Started LSB: MD monitoring daemon.
+-- Subject: Unit mdadm.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mdadm.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:27 homestead vboxadd[978]: VirtualBox Guest Additions: Starting.
+May 05 01:27:27 homestead vboxadd[978]: /opt/VBoxGuestAdditions-5.2.4/init/vboxadd: 256: /opt/VBoxGuestAdditions-5.2.4/init/vboxadd: cannot create : Directory nonexistent
+May 05 01:27:27 homestead kernel: vboxsf: Successfully loaded version 5.0.18_Ubuntu (interface 0x00010004)
+May 05 01:27:28 homestead dbus[897]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'[0m
+May 05 01:27:28 homestead systemd[1]: Starting Authenticate and Authorize Users to Run Privileged Tasks...
+-- Subject: Unit polkitd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit polkitd.service has begun starting up.
+May 05 01:27:28 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0xc02c5600 stripped size=0xc0005600[0m
+May 05 01:27:28 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0xc09c5604 stripped size=0xc0005604[0m
+May 05 01:27:29 homestead dhclient[1205]: Internet Systems Consortium DHCP Client 4.3.3
+May 05 01:27:29 homestead ifup[1030]: Internet Systems Consortium DHCP Client 4.3.3
+May 05 01:27:29 homestead dhclient[1205]: Copyright 2004-2015 Internet Systems Consortium.
+May 05 01:27:29 homestead ifup[1030]: Copyright 2004-2015 Internet Systems Consortium.
+May 05 01:27:29 homestead dhclient[1205]: All rights reserved.
+May 05 01:27:29 homestead ifup[1030]: All rights reserved.
+May 05 01:27:29 homestead dhclient[1205]: For info, please visit https://www.isc.org/software/dhcp/
+May 05 01:27:29 homestead ifup[1030]: For info, please visit https://www.isc.org/software/dhcp/
+May 05 01:27:29 homestead dhclient[1205]: 
+May 05 01:27:29 homestead polkitd[1186]: started daemon version 0.105 using authority implementation `local' version `0.105'
+May 05 01:27:29 homestead systemd[1]: Started Authenticate and Authorize Users to Run Privileged Tasks.
+-- Subject: Unit polkitd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit polkitd.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead dbus[897]: [0;1;39m[system] Successfully activated service 'org.freedesktop.PolicyKit1'[0m
+May 05 01:27:29 homestead systemd[1]: Started Accounts Service.
+-- Subject: Unit accounts-daemon.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit accounts-daemon.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead accounts-daemon[1027]: started daemon version 0.6.40
+May 05 01:27:29 homestead snapd[1013]: AppArmor status: apparmor is enabled and all features are available
+May 05 01:27:29 homestead ifup[1030]: Cannot find device "enp0s3"
+May 05 01:27:29 homestead dhclient[1205]: [0;1;31mError getting hardware address for "enp0s3": No such device[0m
+May 05 01:27:29 homestead ifup[1030]: Error getting hardware address for "enp0s3": No such device
+May 05 01:27:29 homestead dhclient[1205]: 
+May 05 01:27:29 homestead dhclient[1205]: [0;1;31mIf you think you have received this message due to a bug rather[0m
+May 05 01:27:29 homestead ifup[1030]: If you think you have received this message due to a bug rather
+May 05 01:27:29 homestead dhclient[1205]: [0;1;31mthan a configuration issue please read the section on submitting[0m
+May 05 01:27:29 homestead ifup[1030]: than a configuration issue please read the section on submitting
+May 05 01:27:29 homestead dhclient[1205]: [0;1;31mbugs on either our web page at www.isc.org or in the README file[0m
+May 05 01:27:29 homestead ifup[1030]: bugs on either our web page at www.isc.org or in the README file
+May 05 01:27:29 homestead dhclient[1205]: [0;1;31mbefore submitting a bug.  These pages explain the proper[0m
+May 05 01:27:29 homestead ifup[1030]: before submitting a bug.  These pages explain the proper
+May 05 01:27:29 homestead dhclient[1205]: [0;1;31mprocess and the information we find helpful for debugging..[0m
+May 05 01:27:29 homestead ifup[1030]: process and the information we find helpful for debugging..
+May 05 01:27:29 homestead dhclient[1205]: 
+May 05 01:27:29 homestead dhclient[1205]: [0;1;31mexiting.[0m
+May 05 01:27:29 homestead ifup[1030]: exiting.
+May 05 01:27:29 homestead ifup[1030]: Failed to bring up enp0s3.
+May 05 01:27:29 homestead systemd[1]: [0;1;39mnetworking.service: Main process exited, code=exited, status=1/FAILURE[0m
+May 05 01:27:29 homestead systemd[1]: [0;1;31mFailed to start Raise network interfaces.[0m
+-- Subject: Unit networking.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit networking.service has failed.
+-- 
+-- The result is failed.
+May 05 01:27:29 homestead systemd[1]: [0;1;39mnetworking.service: Unit entered failed state.[0m
+May 05 01:27:29 homestead systemd[1]: [0;1;39mnetworking.service: Failed with result 'exit-code'.[0m
+May 05 01:27:29 homestead systemd[1]: Reached target Network.
+-- Subject: Unit network.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit network.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead systemd[1]: Started Unattended Upgrades Shutdown.
+-- Subject: Unit unattended-upgrades.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit unattended-upgrades.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead systemd[1]: Starting MySQL Community Server...
+-- Subject: Unit mysql.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mysql.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Starting The PHP 7.0 FastCGI Process Manager...
+-- Subject: Unit php7.0-fpm.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit php7.0-fpm.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Started Simple, fast work queue.
+-- Subject: Unit beanstalkd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit beanstalkd.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nginx.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Started memcached daemon.
+-- Subject: Unit memcached.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit memcached.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead systemd[1]: Starting The PHP 7.1 FastCGI Process Manager...
+-- Subject: Unit php7.1-fpm.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit php7.1-fpm.service has begun starting up.
+May 05 01:27:29 homestead snapd[1013]: 2018/05/05 01:27:29.570357 daemon.go:306: started snapd/2.29.4.2 (series 16; classic) ubuntu/16.04 (amd64) linux/4.4.0-116-generic.
+May 05 01:27:29 homestead systemd[1]: Starting OpenBSD Secure Shell server...
+-- Subject: Unit ssh.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Starting The PHP 5.6 FastCGI Process Manager...
+-- Subject: Unit php5.6-fpm.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit php5.6-fpm.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Starting The PHP 7.2 FastCGI Process Manager...
+-- Subject: Unit php7.2-fpm.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit php7.2-fpm.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Started Supervisor process control system for UNIX.
+-- Subject: Unit supervisor.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit supervisor.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead systemd[1]: Started Mailhog.
+-- Subject: Unit mailhog.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mailhog.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead systemd[1]: Starting Advanced key-value store...
+-- Subject: Unit redis-server.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit redis-server.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Reached target Network is Online.
+-- Subject: Unit network-online.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit network-online.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead systemd[1]: Starting Daily apt download activities...
+-- Subject: Unit apt-daily.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Starting LSB: Blackfire Agent...
+-- Subject: Unit blackfire-agent.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit blackfire-agent.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Starting /etc/rc.local Compatibility...
+-- Subject: Unit rc-local.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rc-local.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Starting iSCSI initiator daemon (iscsid)...
+-- Subject: Unit iscsid.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit iscsid.service has begun starting up.
+May 05 01:27:29 homestead systemd[1]: Started Snappy daemon.
+-- Subject: Unit snapd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:29 homestead run-parts[1276]: run-parts: executing /etc/redis/redis-server.pre-up.d/00_example
+May 05 01:27:30 homestead systemd[1]: Started /etc/rc.local Compatibility.
+-- Subject: Unit rc-local.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rc-local.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:30 homestead blackfire-agent[1289]:  * Starting Blackfire Agent blackfire-agent
+May 05 01:27:30 homestead run-parts[1334]: run-parts: executing /etc/redis/redis-server.post-up.d/00_example
+May 05 01:27:30 homestead systemd[1]: Started Advanced key-value store.
+-- Subject: Unit redis-server.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit redis-server.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:30 homestead systemd[1]: Started vboxadd.service.
+-- Subject: Unit vboxadd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit vboxadd.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:30 homestead systemd[1]: Starting vboxadd-service.service...
+-- Subject: Unit vboxadd-service.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit vboxadd-service.service has begun starting up.
+May 05 01:27:30 homestead vboxadd-service[1346]: vboxadd-service.sh: Starting VirtualBox Guest Addition service.
+May 05 01:27:30 homestead vboxadd-service.sh[1352]: [0;1;39mStarting VirtualBox Guest Addition service.[0m
+May 05 01:27:31 homestead iscsid[1338]: [0;1;39miSCSI logger with pid=1361 started![0m
+May 05 01:27:31 homestead systemd[1]: iscsid.service: Failed to read PID from file /run/iscsid.pid: Invalid argument
+May 05 01:27:31 homestead systemd[1]: Started iSCSI initiator daemon (iscsid).
+-- Subject: Unit iscsid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit iscsid.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Starting Login to default iSCSI targets...
+-- Subject: Unit open-iscsi.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit open-iscsi.service has begun starting up.
+May 05 01:27:31 homestead iscsid[1361]: [0;1;31miSCSI daemon with pid=1362 started![0m
+May 05 01:27:31 homestead iscsiadm[1367]: iscsiadm: No records found
+May 05 01:27:31 homestead systemd[1]: Started Login to default iSCSI targets.
+-- Subject: Unit open-iscsi.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit open-iscsi.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Reached target Remote File Systems (Pre).
+-- Subject: Unit remote-fs-pre.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit remote-fs-pre.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Reached target Remote File Systems.
+-- Subject: Unit remote-fs.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit remote-fs.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Starting LSB: Start NTP daemon...
+-- Subject: Unit ntp.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ntp.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+-- Subject: Unit ondemand.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ondemand.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Starting Permit User Sessions...
+-- Subject: Unit systemd-user-sessions.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-user-sessions.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Starting LSB: daemon to balance interrupts for SMP systems...
+-- Subject: Unit irqbalance.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit irqbalance.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Starting LSB: automatic crash report generation...
+-- Subject: Unit apport.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apport.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Starting LSB: Start/stop sysstat's sadc...
+-- Subject: Unit sysstat.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sysstat.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Started LXD - container startup/shutdown.
+-- Subject: Unit lxd-containers.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lxd-containers.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
+-- Subject: Unit ondemand.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ondemand.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead irqbalance[1386]:  * Starting SMP IRQ Balancer: irqbalance
+May 05 01:27:31 homestead ntp[1374]:  * Starting NTP server ntpd
+May 05 01:27:31 homestead apport[1389]:  * Starting automatic crash report generation: apport
+May 05 01:27:31 homestead systemd[1]: Started LSB: Start/stop sysstat's sadc.
+-- Subject: Unit sysstat.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sysstat.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Started Permit User Sessions.
+-- Subject: Unit systemd-user-sessions.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-user-sessions.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Starting Hold until boot process finishes up...
+-- Subject: Unit plymouth-quit-wait.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-quit-wait.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Starting Terminate Plymouth Boot Screen...
+-- Subject: Unit plymouth-quit.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-quit.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Started Hold until boot process finishes up.
+-- Subject: Unit plymouth-quit-wait.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-quit-wait.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead /usr/sbin/irqbalance[1418]: [0;1;39mBalancing is ineffective on systems with a single cpu.  Shutting down[0m
+May 05 01:27:31 homestead irqbalance[1386]:    ...done.
+May 05 01:27:31 homestead systemd[1]: Started LSB: daemon to balance interrupts for SMP systems.
+-- Subject: Unit irqbalance.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit irqbalance.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead apport[1389]:    ...done.
+May 05 01:27:31 homestead systemd[1]: Started Terminate Plymouth Boot Screen.
+-- Subject: Unit plymouth-quit.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-quit.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Started LSB: automatic crash report generation.
+-- Subject: Unit apport.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apport.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Starting Set console scheme...
+-- Subject: Unit setvtrgb.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit setvtrgb.service has begun starting up.
+May 05 01:27:31 homestead systemd[1]: Started Getty on tty1.
+-- Subject: Unit getty@tty1.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit getty@tty1.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead systemd[1]: Reached target Login Prompts.
+-- Subject: Unit getty.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit getty.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0xc02c5600 stripped size=0xc0005600[0m
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0x5609 stripped size=0xc0005609[0m
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0x5609 stripped size=0xc0005609[0m
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0x5609 stripped size=0xc0005609[0m
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0x5609 stripped size=0xc0005609[0m
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0x5609 stripped size=0xc0005609[0m
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0xc09c5604 stripped size=0xc0005604[0m
+May 05 01:27:31 homestead vboxadd-service.sh[1459]: [0;1;39mVirtualBox Guest Addition service started.[0m
+May 05 01:27:31 homestead systemd[1]: [0;1;39mvboxadd-service.service: Control process exited, code=exited status=1[0m
+May 05 01:27:31 homestead systemd[1]: [0;1;31mFailed to start vboxadd-service.service.[0m
+-- Subject: Unit vboxadd-service.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit vboxadd-service.service has failed.
+-- 
+-- The result is failed.
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0x5609 stripped size=0xc0005609[0m
+May 05 01:27:31 homestead kernel: [0;1;39mVGDrvCommonIoCtl: Unknown request iFunction=0x5609 stripped size=0xc0005609[0m
+May 05 01:27:31 homestead systemd[1]: [0;1;39mvboxadd-service.service: Unit entered failed state.[0m
+May 05 01:27:31 homestead systemd[1]: [0;1;39mvboxadd-service.service: Failed with result 'exit-code'.[0m
+May 05 01:27:31 homestead sshd[1270]: Server listening on 0.0.0.0 port 22.
+May 05 01:27:31 homestead systemd[1]: Started OpenBSD Secure Shell server.
+-- Subject: Unit ssh.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:31 homestead sshd[1270]: Server listening on :: port 22.
+May 05 01:27:31 homestead systemd[1]: Started Set console scheme.
+-- Subject: Unit setvtrgb.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit setvtrgb.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:32 homestead su[1332]: Successful su for blackfire by root
+May 05 01:27:32 homestead su[1332]: + ??? root:blackfire
+May 05 01:27:32 homestead su[1332]: pam_unix(su:session): session opened for user blackfire by (uid=0)
+May 05 01:27:32 homestead systemd[1]: Created slice User Slice of blackfire.
+-- Subject: Unit user-998.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-998.slice has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:32 homestead systemd[1]: Starting User Manager for UID 998...
+-- Subject: Unit user@998.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@998.service has begun starting up.
+May 05 01:27:32 homestead systemd[1]: Started Session c1 of user blackfire.
+-- Subject: Unit session-c1.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-c1.scope has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:32 homestead systemd-logind[1026]: New session c1 of user blackfire.
+-- Subject: A new session c1 has been created for user blackfire
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c1 has been created for the user blackfire.
+-- 
+-- The leading process of the session is 1332.
+May 05 01:27:33 homestead systemd[1465]: pam_unix(systemd-user:session): session opened for user blackfire by (uid=0)
+May 05 01:27:33 homestead systemd[1465]: Reached target Sockets.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1465]: Reached target Timers.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1465]: Reached target Paths.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1465]: Reached target Basic System.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1465]: Reached target Default.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1465]: Startup finished in 461ms.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required KERNEL_USEC microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 461755 microseconds.
+May 05 01:27:33 homestead systemd[1]: Started User Manager for UID 998.
+-- Subject: Unit user@998.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@998.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead su[1332]: pam_unix(su:session): session closed for user blackfire
+May 05 01:27:33 homestead systemd-logind[1026]: Removed session c1.
+-- Subject: Session c1 has been terminated
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID c1 has been terminated.
+May 05 01:27:33 homestead systemd[1]: Stopping User Manager for UID 998...
+-- Subject: Unit user@998.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@998.service has begun shutting down.
+May 05 01:27:33 homestead systemd[1465]: Reached target Shutdown.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1465]: Stopped target Default.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:33 homestead systemd[1465]: Stopped target Basic System.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:33 homestead systemd[1465]: Stopped target Sockets.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:33 homestead systemd[1465]: Stopped target Paths.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:33 homestead systemd[1465]: Stopped target Timers.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:33 homestead systemd[1465]: Starting Exit the Session...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has begun starting up.
+May 05 01:27:33 homestead su[1496]: Successful su for blackfire by root
+May 05 01:27:33 homestead su[1496]: + ??? root:blackfire
+May 05 01:27:33 homestead su[1496]: pam_unix(su:session): session opened for user blackfire by (uid=0)
+May 05 01:27:33 homestead systemd[1]: Created slice User Slice of blackfire.
+-- Subject: Unit user-998.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-998.slice has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1]: Started Session c2 of user blackfire.
+-- Subject: Unit session-c2.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-c2.scope has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd-logind[1026]: New session c2 of user blackfire.
+-- Subject: A new session c2 has been created for user blackfire
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c2 has been created for the user blackfire.
+-- 
+-- The leading process of the session is 1496.
+May 05 01:27:33 homestead systemd[1]: Started Daily apt download activities.
+-- Subject: Unit apt-daily.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1465]: Received SIGRTMIN+24 from PID 1493 (kill).
+May 05 01:27:33 homestead systemd[1474]: pam_unix(systemd-user:session): session closed for user blackfire
+May 05 01:27:33 homestead systemd[1]: Starting User Manager for UID 998...
+-- Subject: Unit user@998.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@998.service has begun starting up.
+May 05 01:27:33 homestead systemd[1503]: pam_unix(systemd-user:session): session opened for user blackfire by (uid=0)
+May 05 01:27:33 homestead systemd[1503]: Reached target Timers.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1503]: Reached target Sockets.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1503]: Reached target Paths.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1503]: Reached target Basic System.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1503]: Reached target Default.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead systemd[1503]: Startup finished in 19ms.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required KERNEL_USEC microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 19206 microseconds.
+May 05 01:27:33 homestead systemd[1]: Started User Manager for UID 998.
+-- Subject: Unit user@998.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@998.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:33 homestead audit[1420]: AVC apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/proc/1420/status" pid=1420 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=114 ouid=114
+May 05 01:27:33 homestead audit[1420]: AVC apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=1420 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=114 ouid=0
+May 05 01:27:33 homestead kernel: [0;1;39maudit_printk_skb: 18 callbacks suppressed[0m
+May 05 01:27:33 homestead kernel: [0;1;39maudit: type=1400 audit(1525483653.976:18): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/proc/1420/status" pid=1420 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=114 ouid=114[0m
+May 05 01:27:33 homestead kernel: [0;1;39maudit: type=1400 audit(1525483653.976:19): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=1420 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=114 ouid=0[0m
+May 05 01:27:33 homestead kernel: [0;1;39maudit: type=1400 audit(1525483653.976:20): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/proc/1420/status" pid=1420 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=114 ouid=114[0m
+May 05 01:27:33 homestead audit[1420]: AVC apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/proc/1420/status" pid=1420 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=114 ouid=114
+May 05 01:27:35 homestead env[1274]: 2018/05/05 01:27:35 Using in-memory storage
+May 05 01:27:35 homestead blackfire-agent[1289]: The server ID parameter is not set. Please run 'blackfire-agent -register' to configure it.
+May 05 01:27:35 homestead blackfire-agent[1289]: usage /usr/bin/blackfire-agent [options]
+May 05 01:27:35 homestead blackfire-agent[1289]:   --collector="https://blackfire.io": Sets the URL of Blackfire's data collector
+May 05 01:27:35 homestead blackfire-agent[1289]:   --config="/etc/blackfire/agent": Sets the path to the configuration file
+May 05 01:27:35 homestead blackfire-agent[1289]:   -d: Prints the current configuration
+May 05 01:27:35 homestead blackfire-agent[1289]:   --http-proxy="": Sets the http proxy to use
+May 05 01:27:35 homestead blackfire-agent[1289]:   --https-proxy="": Sets the https proxy to use
+May 05 01:27:35 homestead blackfire-agent[1289]:   --log-file="stderr": Sets the path of the log file. Use stderr to log to stderr
+May 05 01:27:35 homestead blackfire-agent[1289]:   --log-level="1": log verbosity level (4: debug, 3: info, 2: warning, 1: error)
+May 05 01:27:35 homestead blackfire-agent[1289]:   --register: Helps you with registering the agent
+May 05 01:27:35 homestead blackfire-agent[1289]:   --server-id="": Sets the server id used to authenticate with Blackfire API
+May 05 01:27:35 homestead blackfire-agent[1289]:   --server-token="": Sets the server token used to authenticate with Blackfire API. It is unsafe to set this from the command line
+May 05 01:27:35 homestead blackfire-agent[1289]:   --socket="unix:///var/run/blackfire/agent.sock": Sets the socket the agent should read traces from. Possible value can be a unix socket or a TCP address. ie: unix:///var/run/blackfire/agent.sock or tcp://127.0.0.1:8307
+May 05 01:27:35 homestead blackfire-agent[1289]:   --test: Tests the configuration
+May 05 01:27:35 homestead blackfire-agent[1289]:   --timeout="15s": Sets the Blackfire connection timeout
+May 05 01:27:35 homestead blackfire-agent[1289]:   -v: Prints the version number
+May 05 01:27:35 homestead su[1496]: pam_unix(su:session): session closed for user blackfire
+May 05 01:27:35 homestead blackfire-agent[1289]:    ...fail!
+May 05 01:27:35 homestead systemd[1]: [0;1;39mblackfire-agent.service: Control process exited, code=exited status=1[0m
+May 05 01:27:35 homestead systemd[1]: [0;1;31mFailed to start LSB: Blackfire Agent.[0m
+-- Subject: Unit blackfire-agent.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit blackfire-agent.service has failed.
+-- 
+-- The result is failed.
+May 05 01:27:35 homestead systemd[1]: [0;1;39mblackfire-agent.service: Unit entered failed state.[0m
+May 05 01:27:35 homestead systemd[1]: [0;1;39mblackfire-agent.service: Failed with result 'exit-code'.[0m
+May 05 01:27:35 homestead systemd-logind[1026]: Removed session c2.
+-- Subject: Session c2 has been terminated
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID c2 has been terminated.
+May 05 01:27:35 homestead systemd[1]: Stopping User Manager for UID 998...
+-- Subject: Unit user@998.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@998.service has begun shutting down.
+May 05 01:27:35 homestead env[1274]: 2018/05/05 01:27:35 [SMTP] Binding to address: 0.0.0.0:1025
+May 05 01:27:35 homestead env[1274]: [HTTP] Binding to address: 0.0.0.0:8025
+May 05 01:27:35 homestead env[1274]: 2018/05/05 01:27:35 Serving under http://0.0.0.0:8025/
+May 05 01:27:35 homestead systemd[1503]: Stopped target Default.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:35 homestead systemd[1503]: Stopped target Basic System.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:35 homestead systemd[1503]: Stopped target Paths.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:35 homestead systemd[1503]: Stopped target Timers.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:35 homestead systemd[1503]: Stopped target Sockets.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:27:35 homestead systemd[1503]: Reached target Shutdown.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:35 homestead systemd[1503]: Starting Exit the Session...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has begun starting up.
+May 05 01:27:35 homestead env[1274]: Creating API v1 with WebPath:
+May 05 01:27:35 homestead systemd[1503]: Received SIGRTMIN+24 from PID 1523 (kill).
+May 05 01:27:35 homestead systemd[1]: Stopped User Manager for UID 998.
+-- Subject: Unit user@998.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@998.service has finished shutting down.
+May 05 01:27:35 homestead systemd[1]: Removed slice User Slice of blackfire.
+-- Subject: Unit user-998.slice has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-998.slice has finished shutting down.
+May 05 01:27:35 homestead env[1274]: Creating API v2 with WebPath:
+May 05 01:27:35 homestead nginx[1256]: nginx: [crit] pread() "/etc/nginx/sites-enabled/sites-available" failed (21: Is a directory)
+May 05 01:27:35 homestead nginx[1256]: nginx: configuration file /etc/nginx/nginx.conf test failed
+May 05 01:27:35 homestead systemd[1]: [0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+May 05 01:27:35 homestead systemd[1]: [0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is failed.
+May 05 01:27:35 homestead systemd[1]: [0;1;39mnginx.service: Unit entered failed state.[0m
+May 05 01:27:35 homestead systemd[1]: [0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+May 05 01:27:36 homestead sshd[1516]: Accepted publickey for vagrant from 10.0.2.2 port 1442 ssh2: RSA SHA256:3Axf9EuDDrtjCTNyTIj1iWaFy2uPfdkCkEzitn0sGLE
+May 05 01:27:36 homestead sshd[1516]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+May 05 01:27:36 homestead systemd[1]: Created slice User Slice of vagrant.
+-- Subject: Unit user-1000.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-1000.slice has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:36 homestead systemd[1]: Starting User Manager for UID 1000...
+-- Subject: Unit user@1000.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has begun starting up.
+May 05 01:27:36 homestead systemd[1532]: pam_unix(systemd-user:session): session opened for user vagrant by (uid=0)
+May 05 01:27:36 homestead systemd-logind[1026]: New session 1 of user vagrant.
+-- Subject: A new session 1 has been created for user vagrant
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID 1 has been created for the user vagrant.
+-- 
+-- The leading process of the session is 1516.
+May 05 01:27:36 homestead systemd[1]: Started Session 1 of user vagrant.
+-- Subject: Unit session-1.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-1.scope has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:36 homestead systemd[1532]: Reached target Timers.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:36 homestead systemd[1532]: Reached target Paths.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:36 homestead systemd[1532]: Reached target Sockets.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:36 homestead systemd[1532]: Reached target Basic System.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:36 homestead systemd[1532]: Reached target Default.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:27:36 homestead systemd[1532]: Startup finished in 25ms.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required KERNEL_USEC microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 25789 microseconds.
+May 05 01:27:36 homestead systemd[1]: Started User Manager for UID 1000.
+-- Subject: Unit user@1000.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:33 homestead systemd[1532]: Time has been changed
+-- Subject: Time change
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- The system clock has been changed to REALTIME microseconds after January 1st, 1970.
+May 05 01:26:33 homestead systemd[1]: Time has been changed
+-- Subject: Time change
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- The system clock has been changed to REALTIME microseconds after January 1st, 1970.
+May 05 01:26:33 homestead ntpdate[1147]: [0;1;39mstep time server 85.199.214.101 offset -63.743274 sec[0m
+May 05 01:26:34 homestead ntpd[1428]: [0;1;39mntpd 4.2.8p4@1.3265-o Wed Feb 14 14:56:29 UTC 2018 (1): Starting[0m
+May 05 01:26:34 homestead ntpd[1428]: Command line: /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 112:117
+May 05 01:26:34 homestead ntp[1374]:    ...done.
+May 05 01:26:34 homestead systemd[1]: Started LSB: Start NTP daemon.
+-- Subject: Unit ntp.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ntp.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:34 homestead ntpd[1565]: proto: precision = 0.045 usec (-24)
+May 05 01:26:34 homestead ntpd[1565]: Listen and drop on 0 v6wildcard [::]:123
+May 05 01:26:34 homestead ntpd[1565]: Listen and drop on 1 v4wildcard 0.0.0.0:123
+May 05 01:26:34 homestead ntpd[1565]: Listen normally on 2 lo 127.0.0.1:123
+May 05 01:26:34 homestead ntpd[1565]: Listen normally on 3 eth0 10.0.2.15:123
+May 05 01:26:34 homestead ntpd[1565]: Listen normally on 4 eth1 192.168.2.100:123
+May 05 01:26:34 homestead ntpd[1565]: Listen normally on 5 lo [::1]:123
+May 05 01:26:34 homestead ntpd[1565]: Listen normally on 6 eth0 [fe80::a00:27ff:fe0c:2692%2]:123
+May 05 01:26:34 homestead ntpd[1565]: Listen normally on 7 eth1 [fe80::a00:27ff:fe1b:4d18%3]:123
+May 05 01:26:34 homestead ntpd[1565]: Listening on routing socket on fd #24 for interface updates
+May 05 01:26:35 homestead ntpd[1565]: Soliciting pool server 61.216.153.107
+May 05 01:26:36 homestead systemd[1]: Started The PHP 5.6 FastCGI Process Manager.
+-- Subject: Unit php5.6-fpm.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit php5.6-fpm.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:36 homestead systemd[1]: Started The PHP 7.0 FastCGI Process Manager.
+-- Subject: Unit php7.0-fpm.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit php7.0-fpm.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:36 homestead systemd[1]: Started The PHP 7.1 FastCGI Process Manager.
+-- Subject: Unit php7.1-fpm.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit php7.1-fpm.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:36 homestead systemd[1]: Started The PHP 7.2 FastCGI Process Manager.
+-- Subject: Unit php7.2-fpm.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit php7.2-fpm.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:36 homestead ntpd[1565]: Soliciting pool server 85.199.214.100
+May 05 01:26:36 homestead ntpd[1565]: Soliciting pool server 79.161.57.119
+May 05 01:26:37 homestead ntpd[1565]: Soliciting pool server 69.60.114.223
+May 05 01:26:37 homestead ntpd[1565]: Soliciting pool server 5.79.108.34
+May 05 01:26:37 homestead ntpd[1565]: Soliciting pool server 61.216.153.104
+May 05 01:26:37 homestead sshd[1657]: Accepted publickey for vagrant from 10.0.2.2 port 1451 ssh2: RSA SHA256:3Axf9EuDDrtjCTNyTIj1iWaFy2uPfdkCkEzitn0sGLE
+May 05 01:26:37 homestead sshd[1657]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+May 05 01:26:37 homestead systemd[1]: Started Session 2 of user vagrant.
+-- Subject: Unit session-2.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-2.scope has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:37 homestead systemd-logind[1026]: New session 2 of user vagrant.
+-- Subject: A new session 2 has been created for user vagrant
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID 2 has been created for the user vagrant.
+-- 
+-- The leading process of the session is 1657.
+May 05 01:26:38 homestead ntpd[1565]: Soliciting pool server 193.228.143.24
+May 05 01:26:38 homestead ntpd[1565]: Soliciting pool server 85.199.214.101
+May 05 01:26:38 homestead ntpd[1565]: Soliciting pool server 61.216.153.105
+May 05 01:26:39 homestead supervisord[1273]: 2018-05-05 01:26:39,573 CRIT Supervisor running as root (no user in config file)
+May 05 01:26:39 homestead supervisord[1273]: 2018-05-05 01:26:39,594 WARN No file matches via include "/etc/supervisor/conf.d/*.conf"
+May 05 01:26:39 homestead ntpd[1565]: Soliciting pool server 61.216.153.106
+May 05 01:26:39 homestead ntpd[1565]: Soliciting pool server 91.189.94.4
+May 05 01:26:40 homestead systemd[1]: Started PostgreSQL Cluster 10-main.
+-- Subject: Unit postgresql@10-main.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit postgresql@10-main.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:40 homestead systemd[1]: Starting PostgreSQL RDBMS...
+-- Subject: Unit postgresql.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit postgresql.service has begun starting up.
+May 05 01:26:40 homestead supervisord[1273]: 2018-05-05 01:26:40,507 INFO RPC interface 'supervisor' initialized
+May 05 01:26:40 homestead supervisord[1273]: 2018-05-05 01:26:40,508 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+May 05 01:26:40 homestead supervisord[1273]: 2018-05-05 01:26:40,508 INFO supervisord started with pid 1273
+May 05 01:26:40 homestead systemd[1]: Started PostgreSQL RDBMS.
+-- Subject: Unit postgresql.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit postgresql.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:40 homestead ntpd[1565]: Soliciting pool server 91.189.91.157
+May 05 01:26:40 homestead ntpd[1565]: Soliciting pool server 120.25.115.19
+May 05 01:26:40 homestead systemd[1]: Started Clean php session files.
+-- Subject: Unit phpsessionclean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit phpsessionclean.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:40 homestead systemd[1]: Started MySQL Community Server.
+-- Subject: Unit mysql.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mysql.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:40 homestead systemd[1]: Starting LSB: Postfix Mail Transport Agent...
+-- Subject: Unit postfix.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit postfix.service has begun starting up.
+May 05 01:26:40 homestead postfix[1951]:  * Starting Postfix Mail Transport Agent postfix
+May 05 01:26:41 homestead postfix[2036]: Postfix is running with backwards-compatible default settings
+May 05 01:26:41 homestead postfix[2036]: See http://www.postfix.org/COMPATIBILITY_README.html for details
+May 05 01:26:41 homestead postfix[2036]: To disable backwards compatibility use "postconf compatibility_level=2" and "postfix reload"
+May 05 01:26:41 homestead ntpd[1565]: Soliciting pool server 91.189.89.198
+May 05 01:26:42 homestead postfix[1951]:    ...done.
+May 05 01:26:42 homestead systemd[1]: Started LSB: Postfix Mail Transport Agent.
+-- Subject: Unit postfix.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit postfix.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:42 homestead systemd[1]: Reached target Mail Transport Agent.
+-- Subject: Unit mail-transport-agent.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mail-transport-agent.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:42 homestead systemd[1]: Reached target Multi-User System.
+-- Subject: Unit multi-user.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit multi-user.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:42 homestead systemd[1]: Reached target Graphical Interface.
+-- Subject: Unit graphical.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit graphical.target has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:42 homestead systemd[1]: Starting Update UTMP about System Runlevel Changes...
+-- Subject: Unit systemd-update-utmp-runlevel.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp-runlevel.service has begun starting up.
+May 05 01:26:42 homestead systemd[1]: Started Update UTMP about System Runlevel Changes.
+-- Subject: Unit systemd-update-utmp-runlevel.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp-runlevel.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:42 homestead systemd[1]: Startup finished in 7.477s (kernel) + 29.589s (userspace) = 37.067s.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required 7477878 microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 29589570 microseconds.
+May 05 01:26:42 homestead postfix/master[2111]: daemon started -- version 3.1.0, configuration /etc/postfix
+May 05 01:26:42 homestead ntpd[1565]: Soliciting pool server 91.189.89.199
+May 05 01:26:43 homestead sudo[2232]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:43 homestead sudo[2232]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:44 homestead sudo[2232]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:44 homestead sudo[2264]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:44 homestead sudo[2264]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:44 homestead sudo[2264]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:44 homestead sudo[2287]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/systemctl status systemd-networkd.service[0m
+May 05 01:26:44 homestead sudo[2287]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:44 homestead sudo[2287]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:44 homestead sudo[2292]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:44 homestead sudo[2292]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:44 homestead kernel: IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+May 05 01:26:44 homestead systemd[1]: Reloading OpenBSD Secure Shell server.
+-- Subject: Unit ssh.service has begun reloading its configuration
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has begun reloading its configuration
+May 05 01:26:44 homestead sshd[1270]: Received SIGHUP; restarting.
+May 05 01:26:44 homestead sshd[1270]: Server listening on 0.0.0.0 port 22.
+May 05 01:26:44 homestead ntpdate[2385]: [0;1;31mthe NTP socket is in use, exiting[0m
+May 05 01:26:44 homestead systemd[1]: Reloaded OpenBSD Secure Shell server.
+-- Subject: Unit ssh.service has finished reloading its configuration
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ssh.service has finished reloading its configuration
+-- 
+-- The result is done.
+May 05 01:26:44 homestead sshd[1270]: Server listening on :: port 22.
+May 05 01:26:44 homestead sudo[2292]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:45 homestead sudo[2428]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:45 homestead sudo[2428]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:45 homestead sudo[2428]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:45 homestead sudo[2437]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:45 homestead sudo[2437]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:45 homestead sudo[2437]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:45 homestead sudo[2447]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:45 homestead sudo[2447]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:45 homestead sudo[2447]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:45 homestead sudo[2466]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:45 homestead sudo[2466]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:45 homestead sudo[2466]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:46 homestead sudo[2493]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:46 homestead sudo[2493]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:46 homestead sudo[2493]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:46 homestead sudo[2502]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:46 homestead sudo[2502]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:46 homestead sudo[2502]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:46 homestead sudo[2512]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:46 homestead sudo[2512]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:46 homestead sudo[2512]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:46 homestead sudo[2521]: [0;1;39m vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l[0m
+May 05 01:26:46 homestead sudo[2521]: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 05 01:26:46 homestead sudo[2521]: pam_unix(sudo:session): session closed for user root
+May 05 01:26:46 homestead sshd[1550]: Connection reset by 10.0.2.2 port 1422 [preauth]
+May 05 01:26:46 homestead sshd[1619]: Connection reset by 10.0.2.2 port 1431 [preauth]
+May 05 01:26:46 homestead sshd[1516]: pam_unix(sshd:session): session closed for user vagrant
+May 05 01:26:46 homestead sshd[1657]: pam_unix(sshd:session): session closed for user vagrant
+May 05 01:26:46 homestead systemd-logind[1026]: Removed session 2.
+-- Subject: Session 2 has been terminated
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID 2 has been terminated.
+May 05 01:26:46 homestead systemd-logind[1026]: Removed session 1.
+-- Subject: Session 1 has been terminated
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID 1 has been terminated.
+May 05 01:26:46 homestead systemd[1]: Stopping User Manager for UID 1000...
+-- Subject: Unit user@1000.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has begun shutting down.
+May 05 01:26:46 homestead systemd[1532]: Stopped target Default.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:26:46 homestead systemd[1532]: Reached target Shutdown.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:26:46 homestead systemd[1532]: Starting Exit the Session...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has begun starting up.
+May 05 01:26:46 homestead systemd[1532]: Stopped target Basic System.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:26:46 homestead ntpd[1565]: Deleting interface #4 eth1, 192.168.2.100#123, interface stats: received=0, sent=0, dropped=0, active_time=12 secs
+May 05 01:26:46 homestead systemd[1532]: Stopped target Timers.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:26:46 homestead ntpd[1565]: Deleting interface #7 eth1, fe80::a00:27ff:fe1b:4d18%3#123, interface stats: received=0, sent=0, dropped=0, active_time=12 secs
+May 05 01:26:46 homestead systemd[1532]: Stopped target Paths.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:26:46 homestead systemd[1532]: Stopped target Sockets.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+May 05 01:26:46 homestead systemd[1532]: Received SIGRTMIN+24 from PID 2532 (kill).
+May 05 01:26:46 homestead systemd[1]: Stopped User Manager for UID 1000.
+-- Subject: Unit user@1000.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has finished shutting down.
+May 05 01:26:46 homestead systemd[1]: Removed slice User Slice of vagrant.
+-- Subject: Unit user-1000.slice has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-1000.slice has finished shutting down.
+May 05 01:26:46 homestead kernel: e1000: eth1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+May 05 01:26:46 homestead kernel: IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+May 05 01:26:49 homestead ntpd[1565]: Listen normally on 8 eth1 192.168.2.100:123
+May 05 01:26:49 homestead ntpd[1565]: Listen normally on 9 eth1 [fe80::a00:27ff:fe1b:4d18%3]:123
+May 05 01:26:49 homestead ntpd[1565]: new interface(s) found: waking up resolver
+May 05 01:27:31 homestead env[1274]: [APIv1] KEEPALIVE /api/v1/events
+May 05 01:28:31 homestead env[1274]: [APIv1] KEEPALIVE /api/v1/events
+May 05 01:29:31 homestead env[1274]: [APIv1] KEEPALIVE /api/v1/events
+May 05 01:30:31 homestead env[1274]: [APIv1] KEEPALIVE /api/v1/events
+May 05 01:31:12 homestead sshd[2649]: Accepted publickey for vagrant from 10.0.2.2 port 1875 ssh2: RSA SHA256:3Axf9EuDDrtjCTNyTIj1iWaFy2uPfdkCkEzitn0sGLE
+May 05 01:31:12 homestead sshd[2649]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+May 05 01:31:12 homestead systemd[1]: Created slice User Slice of vagrant.
+-- Subject: Unit user-1000.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-1000.slice has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:31:12 homestead systemd[1]: Starting User Manager for UID 1000...
+-- Subject: Unit user@1000.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has begun starting up.
+May 05 01:31:12 homestead systemd[2651]: pam_unix(systemd-user:session): session opened for user vagrant by (uid=0)
+May 05 01:31:12 homestead systemd[1]: Started Session 3 of user vagrant.
+-- Subject: Unit session-3.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-3.scope has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:31:12 homestead systemd-logind[1026]: New session 3 of user vagrant.
+-- Subject: A new session 3 has been created for user vagrant
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID 3 has been created for the user vagrant.
+-- 
+-- The leading process of the session is 2649.
+May 05 01:31:12 homestead systemd[2651]: Reached target Paths.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:31:12 homestead systemd[2651]: Reached target Sockets.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:31:12 homestead systemd[2651]: Reached target Timers.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:31:12 homestead systemd[2651]: Reached target Basic System.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:31:12 homestead systemd[2651]: Reached target Default.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:31:12 homestead systemd[2651]: Startup finished in 23ms.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required KERNEL_USEC microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 23296 microseconds.
+May 05 01:31:12 homestead systemd[1]: Started User Manager for UID 1000.
+-- Subject: Unit user@1000.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has finished starting up.
+-- 
+-- The start-up result is done.
+May 05 01:31:31 homestead env[1274]: [APIv1] KEEPALIVE /api/v1/events
+May 05 01:32:31 homestead env[1274]: [APIv1] KEEPALIVE /api/v1/events

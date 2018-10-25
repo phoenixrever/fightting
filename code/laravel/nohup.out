@@ -1,0 +1,5 @@
+3669:C 26 May 09:14:47.269 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+3669:C 26 May 09:14:47.269 # Redis version=4.0.8, bits=64, commit=00000000, modified=0, pid=3669, just started
+3669:C 26 May 09:14:47.269 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+3669:M 26 May 09:14:47.270 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+3669:M 26 May 09:14:47.270 # Creating Server TCP listening socket *:6379: bind: Address already in use

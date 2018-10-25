@@ -1,0 +1,227 @@
+body table thead tr a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+body table thead tr a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-control {
+    /*box-shadow: none;*/
+    font-size: 15px;
+    height: 34px;
+    padding: 6px 12px;
+}
+
+#modal-dialog .form-control,#modal-update  .form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    /*font-size: 1rem;*/
+    line-height: 1.5;
+    color: #242a30;
+!important;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #89aad2;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+label {
+    color: #242a30;
+    font-weight: 600;
+}
+
+/*#modal-dialog .form-control.focus, #modal-dialog .form-control.input-white.focus,#modal-dialog .form-control.input-white:focus,#modal-dialog .form-control:focus {*/
+/*border-color: #5db0ff;*/
+/*outline: 0;*/
+/*box-shadow: 0 0 0 .125rem rgba(52, 142, 227, .3)*/
+/*}*/
+
+.form-control.focus, .form-control.input-white.focus, .form-control.input-white:focus, .form-control:focus {
+    background: rgba(255, 255, 255, .25);
+    border-color: #5db0ff;
+    outline: 0;
+    color: #fff;
+    box-shadow: 0 0 0 .125rem rgba(52, 142, 227, .3)
+}
+
+.parsley-error {
+    background: #fff !important;
+    border-color: #ff5b57 !important
+}
+
+.parsley-error:focus {
+    border-color: #cc4946 !important;
+    outline: 0;
+    box-shadow: 0 0 0 .125rem rgba(204, 73, 70, .3) !important
+}
+
+.parsley-success {
+    background: #fff !important;
+    border-color: #00acac !important
+}
+
+.parsley-success:focus {
+    border-color: #008a8a !important;
+    outline: 0;
+    box-shadow: 0 0 0 .125rem rgba(0, 172, 172, .3) !important
+}
+
+.parsley-error, .parsley-success {
+    color: #2d353c !important;
+    box-shadow: none !important
+}
+
+.parsley-error:focus, .parsley-success:focus {
+    color: #2d353c !important
+}
+
+.parsley-errors-list {
+    padding: 0 !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    color: #e5603b;
+    font-size: 12px !important;
+    line-height: inherit !important
+}
+
+.parsley-errors-list.filled {
+    margin-top: 5px !important
+}
+
+.panel-form .cke_chrome {
+    border: none;
+    box-shadow: none
+}
+
+/*input[type=checkbox], input[type=radio] {*/
+/*box-sizing: border-box;*/
+/*padding: auto 10px 10px;*/
+/*vertical-align: middle;*/
+/*display: table-cell;*/
+/*border:1px solid green;*/
+
+/*}*/
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.with-checkbox {
+    display: none;
+}
+
+#hang {
+    display: inline-block;
+}
+
+tbody > tr:hover {
+    background-color: rgba(255, 217, 0, .3) !important;
+}
+
+#deleteAll {
+    display: none;
+}
+
+.tables_paginate {
+    white-space: nowrap;
+    /*border:1px solid red;*/
+}
+
+.panel-body {
+    padding-bottom: 0px;
+}
+
+.checkbox.checkbox-css label {
+    padding-left: 17px;
+}
+
+/*table. thead .sorting:after, table thead .sorting_asc:after, table .sorting_desc:after, table thead .sorting_asc_disabled:after, table thead .sorting_desc_disabled:after {*/
+/*position: absolute;*/
+/*bottom: 80px;*/
+/*right: 80px;*/
+/*display: block;*/
+/*font-family: 'Glyphicons Halflings';*/
+/*opacity: 0.5;*/
+/*}*/
+table thead tr th {
+    cursor: pointer;
+
+}
+
+#permissions_table .pull-right {
+    margin-top: 3px;
+}
+
+.with-btn {
+    min-width: 180px;
+}
+
+.dataTables_length .form-control {
+    margin: 0 5px;
+}
+
+#data-table-default-select {
+    padding-top: 4px;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.white-label label {
+    color: #fff;
+}
+
+#data-table-default-select option {
+    background-color: rgba(97, 98, 100, 0.80) !important;
+}
+
+.foot-page {
+    vertical-align: middle;
+    padding: 10px 0 10px 0px;
+}
+
+/*.xxx{*/
+/*vertical-align: middle;*/
+/*margin-top: 10px;*/
+/*}*/
+
+@media (max-width: 767px) {
+    .search-in .btn-search {
+        right: 10px;
+    }
+}
+
+.search-in .btn-search {
+    position: absolute;
+    font-size: 15px;
+    right: 10px;
+    top: 1px;
+    height: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    background:  0 0;
+    border-radius: 0 30px 30px 0;
+    color: #fff;
+}
+
+#color_word{
+    color: #31ff00;
+    font-weight: bold;
+}
